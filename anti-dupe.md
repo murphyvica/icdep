@@ -1,5 +1,5 @@
 # Anti-Dupe
-###How can we ensure that each card is received once and only once?
+### How can we ensure that each card is received once and only once?
 
 To make sure that each card is only recieved once, we could create a unique identifier for each card. We can create a non-repeatable ID for each card upon it's creation, and make sure that no 2 identifiers can match. To do so, we would need a method to always assign unique ID's to a new card when it is created, and a log of previously recieved identifiers for each node. We then need a rule that checks if the ID of a card that is attempting to be delived has already been logged for each specific node so that we know when not to deliver as it would be redundant.
 
